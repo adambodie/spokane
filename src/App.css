@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+body {
+	background: url('./background.jpg');
+	background-size: cover;
+	background-position: center;
+	font-size: 2rem;
+}
+
+.hello {
+	color: orange;
+	text-align: center;
+	font-family: 'Gamja Flower', cursive;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.hello h1 {
+	font-size: 4rem;
+}
+button {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 40px;
+  min-width: 50px;
+  margin-bottom: 20px;
+  background-color: orange;
+}
+
+
