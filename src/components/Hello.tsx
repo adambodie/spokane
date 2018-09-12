@@ -1,4 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export interface Props {
   enthusiasmLevel?: number;
@@ -7,6 +9,7 @@ export interface Props {
 interface State {
   currentEnthusiasm: number;
 }
+
 
 class Hello extends React.Component<Props, State> {
 	constructor(props: Props) {
@@ -32,7 +35,7 @@ class Hello extends React.Component<Props, State> {
 					<div>{ this.state.currentEnthusiasm > 5 ? ( 
 						<div>
 							<h4>Now You're Ready!</h4>
-							<button>Begin</button>
+							<button><Link to="/main">Begin</Link></button>
 						</div>
 					) : (<div className="greeting">
 							<h2>I'm so excited{getExclamationMarks(this.state.currentEnthusiasm)}</h2>
