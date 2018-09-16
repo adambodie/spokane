@@ -1,0 +1,50 @@
+.carousel-background {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1000px;
+	z-index: 10000;
+	background: url('../images/background.jpg');
+	background-size: cover;
+	color: #ff7e00;
+}
+
+
+  
+.header {
+	width: 640px;
+}
+
+.slick-slide img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	max-height: 480px;
+}
+
+.slick-slide h4 {
+	text-align: center;
+	margin-top: 0px;
+	font-family: 'Gamja Flower', cursive;
+}
+
+.slick-prev, .slick-next {
+	z-index: 10001;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px!important;
+    color: #ff7e00!important;
+}
+
+.slick-prev {
+	left: 0!important;
+}
+
+.slick-next {
+	right: 0!important;
+}
+

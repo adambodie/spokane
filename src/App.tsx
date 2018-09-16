@@ -1,6 +1,8 @@
 import * as React from 'react';
-import './normalize.css';
-import './App.css';
+import './styles/normalize.css';
+import './styles/App.css';
+import './styles/main.css';
+import './styles/carousel.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Hello from './components/Hello';
@@ -12,7 +14,7 @@ class App extends React.Component {
     <Router>
       <div className="App">
         <Route exact path = "/" render={() => <Hello enthusiasmLevel={1} />}/>
-        <Route path="/main" render={() => <Main title={"Welcome to Spokane"} />} />
+        <Route path="/main" render={() => <Main title={"Pigging Out in Spokane"} />} />
       </div>
      </Router>
     );

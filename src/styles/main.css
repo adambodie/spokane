@@ -1,0 +1,60 @@
+.main {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+.main h1 {
+	font-size: 4rem;
+	color: #ff7e00;
+	text-align: center;
+	font-family: 'Gamja Flower', cursive;
+}
+ 
+.squares {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.square, a {
+	width: calc(600px / 3);
+	height: calc(450px / 3);
+	margin: 10px;
+}
+
+.square h5 {
+	text-align: center;
+ }
+
+
+.side-a, .side-b {
+	color: #ff7e00;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+  
+
+.square {
+	background-color: #8946ca;
+	transition: transform 1.5s cubic-bezier(0.55, -0.62, 0.27, 1.2);
+	transform-style: preserve-3d; 
+}
+  
+.square:hover {
+	transform: rotate3d(0, 1, 0, 900deg); 
+}  
+  
+.side-a, .side-b {
+	backface-visibility: hidden; 
+}
+
+.side-b {
+	transform: rotateY(180deg); 
+} 

@@ -6,6 +6,7 @@ import PhotoList from './PhotoList';
 export interface Props {
 	photoset_id: string;
 	per_page: string;
+	menu: string;
 }
 
 interface State {
@@ -38,7 +39,7 @@ class Carousel extends React.Component<Props, State>  {
 	render() {
 		return (
 			<div className='carousel-background'>
-				<PhotoList data={this.state.photographs} />
+				<PhotoList data={this.state.photographs} menu={this.props.menu} />
 			</div>
 		);
 	}

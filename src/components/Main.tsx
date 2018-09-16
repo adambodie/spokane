@@ -7,7 +7,20 @@ import upper from '../images/upper.jpg';
 import lower from '../images/lower.jpg';
 import manito from '../images/manito.jpg';
 import huntington from '../images/huntington.jpg';
+import spokane from '../images/spokane.jpg';
+import cheesecake from '../images/cheesecake.jpg';
+import doner from '../images/doner.jpg';
+import elk from '../images/elk.jpg';
+import bacon from '../images/bacon.jpg';
+import berry from '../images/berry.jpg';
+import fry from '../images/fry.jpg';
+import ibajella from '../images/ibajella.jpg';
+import nitrogen from '../images/nitrogen.jpg';
+import oreo from '../images/oreo.jpg';
+
+
 import { Route, Link } from 'react-router-dom';
+
 import Carousel from './Carousel';
 
 export interface Props {
@@ -15,15 +28,15 @@ export interface Props {
 }
 
 const IMAGES = [
-	{ id: 0, title: riverfront, alt: "Riverfront", photoset_id: "72157687042225613", per_page: "38" },
-	{ id: 1, title: upper, alt: "Upper Spokane Falls", photoset_id: "72157687042225613", per_page: "38" },
-	{ id: 2, title: lower, alt: "Lower Spokane Falls" , photoset_id: "72157687042225613", per_page: "38"},
-	{ id: 3, title: postFalls, alt: "Post Falls", photoset_id: "72157687042225613", per_page: "38" },
-	{ id: 4, photoset_id: "72157687042225613", per_page: "38" },  
-	{ id: 5, title: cda, alt: "Coeur d'Alene" , photoset_id: "72157687042225613", per_page: "38"},
-	{ id: 6, title: cda2, alt: "Coeur d'Alene" , photoset_id: "72157687042225613", per_page: "38"},
-	{ id: 7, title: manito, alt: "Manito Park" , photoset_id: "72157687042225613", per_page: "38"},
-	{ id: 8, title: huntington, alt: "Huntington Park" , photoset_id: "72157687042225613", per_page: "38"}
+	{ id: 0, title: riverfront, alt: "Riverfront Park", photoset_id: "72157698061989302", per_page: "23", menu: cheesecake },
+	{ id: 1, title: upper, alt: "Upper Spokane Falls", photoset_id: "72157700993311464", per_page: "12", menu: doner },
+	{ id: 2, title: lower, alt: "Lower Spokane Falls" , photoset_id: "72157700993352014", per_page: "16", menu: elk },
+	{ id: 3, title: postFalls, alt: "Post Falls", photoset_id: "72157695417499760", per_page: "7", menu: bacon }, 
+	{ id: 4, title: cda, alt: "Coeur d'Alene Resort" , photoset_id: "72157700982006424", per_page: "37", menu: fry },
+	{ id: 5, title: cda2, alt: "Coeur d'Alene" , photoset_id: "72157699685111191", per_page: "14", menu: ibajella},
+	{ id: 6, title: spokane, alt: "Spokane", photoset_id: "72157699685111191", per_page: "11", menu: berry }, 	
+	{ id: 7, title: manito, alt: "Manito Park" , photoset_id: "72157700993437424", per_page: "19", menu: oreo},
+	{ id: 8, title: huntington, alt: "Huntington Park" , photoset_id: "72157673361168848", per_page: "25", menu: nitrogen}
 ];
 
 
@@ -38,11 +51,17 @@ class Main extends React.Component<Props> {
 			<h1>{this.props.title}</h1>
 			<div className="squares">
 				{IMAGES.map(i => (
-					<div className="square">
-						<Link  key={i.id}  to={{  pathname: `/main/${i.id + 1}`, state: { modal: true }}}>
-							<img src={i.title} alt={i.alt} style={{width: 200, height: 150}}/>
-						</Link>
-					</div>))
+					<div className="square" key={i.id} >
+						<Link to={{  pathname: `/main/${i.id + 1}`, state: { modal: true }}}>
+							<div className="side-a">
+								<img src={i.title} alt={i.alt} style={{width: 200, height: 150}}/>
+							</div>
+							<div className="side-b">
+								<h5>{i.alt}</h5>
+							</div>
+						</Link>	
+					</div>
+					))
 					}
 			</div>
 			{IMAGES.map(i => (
@@ -50,7 +69,8 @@ class Main extends React.Component<Props> {
 					render={() => 
 						<Carousel 
 							photoset_id={i.photoset_id} 
-							per_page={i.per_page} 
+							per_page={i.per_page}
+							menu={i.menu} 
 							/>} 
 						/>)
 					)
