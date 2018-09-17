@@ -12,8 +12,8 @@ class PhotoList extends React.Component<Props>  {
 		let results = this.props.data;
 		let menu = this.props.menu;
 		const settings = {
-			dots: true,
-			infinite: true,
+			dots: false,
+			infinite: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,

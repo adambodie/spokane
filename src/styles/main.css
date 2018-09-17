@@ -1,13 +1,14 @@
-.main {
-	width: 60%;
+.main {	
 	display: block;
 	margin: 0 auto;
+	margin-top: 50%;
 }
 .main h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	color: #ff7e00;
 	text-align: center;
 	font-family: 'Gamja Flower', cursive;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
  
 .squares {
@@ -16,14 +17,15 @@
 	flex-wrap: wrap;
 }
 
-.square, a {
-	width: calc(600px / 3);
-	height: calc(450px / 3);
-	margin: 10px;
+.square, a, .square img {
+	width: calc(600px / 5);
+	height: calc(450px / 5);
 }
 
 .square h5 {
 	text-align: center;
+	font-family: 'Gamja Flower', cursive;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
  }
 
 
@@ -39,7 +41,6 @@
 	justify-content: center;
 	align-items: center;
 }
-  
 
 .square {
 	background-color: #8946ca;
@@ -58,3 +59,33 @@
 .side-b {
 	transform: rotateY(180deg); 
 } 
+
+
+@media (min-width: 512px) {
+	.main {
+		margin-top: 0;
+		width: 80%;
+	}
+	.main h1 {
+		font-size: 3rem;
+	}	
+	.square, a, .square img {
+		width: calc(600px / 4);
+		height: calc(450px / 4);
+	}
+}
+
+@media (min-width: 768px) {
+	.main {
+		width: 60%;
+		margin-top: 0;
+	}
+	.main h1 {
+		font-size: 4rem;
+	}	
+	.square, a, .square img {
+		width: calc(600px / 3);
+		height: calc(450px / 3);
+		margin: 10px;
+	}
+}

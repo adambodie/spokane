@@ -14,20 +14,21 @@
 
   
 .header {
-	width: 640px;
+	width: 375px;
 }
 
 .slick-slide img {
 	display: block;
 	margin: 0 auto;
 	margin-top: 10px;
-	max-height: 480px;
+	max-height: 280px;
 }
 
 .slick-slide h4 {
 	text-align: center;
 	margin-top: 0px;
 	font-family: 'Gamja Flower', cursive;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
 .slick-prev, .slick-next {
@@ -37,14 +38,31 @@
 
 .slick-prev:before, .slick-next:before {
     font-size: 40px!important;
-    color: #ff7e00!important;
+	color: #ff7e00!important;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 
 .slick-prev {
-	left: 0!important;
+	left: 25px!important;
 }
 
 .slick-next {
-	right: 0!important;
+	right: 25px!important;
+}
+
+@media (min-width: 768px) {
+	.header {
+		width: 640px;
+	}
+	.slick-slide img {
+		max-height: 480px;
+	}
+	.slick-prev {
+		left: 0!important;
+	}
+	
+	.slick-next {
+		right: 0!important;
+	}		
 }
 

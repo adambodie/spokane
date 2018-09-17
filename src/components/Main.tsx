@@ -32,9 +32,9 @@ const IMAGES = [
 	{ id: 1, title: upper, alt: "Upper Spokane Falls", photoset_id: "72157700993311464", per_page: "12", menu: doner },
 	{ id: 2, title: lower, alt: "Lower Spokane Falls" , photoset_id: "72157700993352014", per_page: "16", menu: elk },
 	{ id: 3, title: postFalls, alt: "Post Falls", photoset_id: "72157695417499760", per_page: "7", menu: bacon }, 
-	{ id: 4, title: cda, alt: "Coeur d'Alene Resort" , photoset_id: "72157700982006424", per_page: "37", menu: fry },
+	{ id: 4, title: cda, alt: "Coeur d'Alene Resort" , photoset_id: "72157700982006424", per_page: "38", menu: fry },
 	{ id: 5, title: cda2, alt: "Coeur d'Alene" , photoset_id: "72157699685111191", per_page: "14", menu: ibajella},
-	{ id: 6, title: spokane, alt: "Spokane", photoset_id: "72157699685111191", per_page: "11", menu: berry }, 	
+	{ id: 6, title: spokane, alt: "Spokane", photoset_id: "72157699685111191", per_page: "12", menu: berry }, 	
 	{ id: 7, title: manito, alt: "Manito Park" , photoset_id: "72157700993437424", per_page: "19", menu: oreo},
 	{ id: 8, title: huntington, alt: "Huntington Park" , photoset_id: "72157673361168848", per_page: "25", menu: nitrogen}
 ];
@@ -54,10 +54,10 @@ class Main extends React.Component<Props> {
 					<div className="square" key={i.id} >
 						<Link to={{  pathname: `/main/${i.id + 1}`, state: { modal: true }}}>
 							<div className="side-a">
-								<img src={i.title} alt={i.alt} style={{width: 200, height: 150}}/>
+								<img src={i.title} alt={i.alt} />
 							</div>
 							<div className="side-b">
-								<h5>{i.alt}</h5>
+								<h5>{i.id + 1}. {i.alt}</h5>
 							</div>
 						</Link>	
 					</div>
