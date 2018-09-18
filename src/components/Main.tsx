@@ -49,6 +49,7 @@ class Main extends React.Component<Props> {
     return (
 		<div className="main">
 			<h1>{this.props.title}</h1>
+			<h6>An Almost Perfect Trip Years in the Making</h6>
 			<div className="squares">
 				{IMAGES.map(i => (
 					<div className="square" key={i.id} >
