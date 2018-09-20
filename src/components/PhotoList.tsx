@@ -5,12 +5,16 @@ import Photo from './Photo';
 export interface Props {
 	data: never[];
 	menu: string;
+	alt: string;
+	paragraph: string;
 }
 
 class PhotoList extends React.Component<Props>  {
 	render() {
 		let results = this.props.data;
 		let menu = this.props.menu;
+		let paragraph = this.props.paragraph;
+		let alt = this.props.alt;
 		const settings = {
 			dots: false,
 			infinite: false,
@@ -31,6 +35,10 @@ class PhotoList extends React.Component<Props>  {
 			<Slider {...settings}>
 				{photos}
 			</Slider>
+				<div className="info">
+					<h1>{alt}</h1>
+					<p>{paragraph}</p>
+				</div>
 		</div>
 		);
 	}

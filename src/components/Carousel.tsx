@@ -7,6 +7,8 @@ export interface Props {
 	photoset_id: string;
 	per_page: string;
 	menu: string;
+	alt: string;
+	paragraph: string;
 }
 
 interface State {
@@ -39,7 +41,7 @@ class Carousel extends React.Component<Props, State>  {
 	render() {
 		return (
 			<div className='carousel-background'>
-				<PhotoList data={this.state.photographs} menu={this.props.menu} />
+				<PhotoList data={this.state.photographs} menu={this.props.menu} alt={this.props.alt} paragraph={this.props.paragraph} />
 			</div>
 		);
 	}

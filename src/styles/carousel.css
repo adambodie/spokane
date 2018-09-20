@@ -4,14 +4,21 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 1000px;
+	height: 1200px;
 	z-index: 10000;
 	background: url('../images/background.jpg');
 	background-size: cover;
+	background-position: bottom;
 	color: #ff7e00;
 }
 
-
+.info {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 5px;
+	text-align: center;
+}
   
 .header {
 	width: 375px;
@@ -63,6 +70,13 @@
 	
 	.slick-next {
 		right: 0!important;
-	}		
+	}
+	
+	.info {
+		width: 60%;
+	}
+	.carousel-background {
+		height: 1400px;
+	}			
 }
 
