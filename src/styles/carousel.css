@@ -40,6 +40,7 @@
 
 .slick-prev, .slick-next {
 	z-index: 10001;
+	top: 90%;
 }
 
 
@@ -77,6 +78,9 @@
 	}
 	.carousel-background {
 		height: 1400px;
-	}			
+	}
+.slick-prev, .slick-next {
+	top: 50%;
+}				
 }
 

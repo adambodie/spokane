@@ -1,7 +1,6 @@
 .main {	
 	display: block;
 	margin: 0 auto;
-	margin-top: 50%;
 }
 .main h1 {
 	font-size: 2rem;
@@ -17,8 +16,14 @@
 	color: #ff7e00;
 	font-family: 'Gamja Flower', cursive;
 	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);	
+	margin-bottom: 10px;
 }
  
+.main p {
+	color: #ff7e00;
+	padding: 5px;
+	font-size: 22px;
+}
 .squares {
 	display: flex;
 	justify-content: center;
@@ -87,7 +92,6 @@
 @media (min-width: 768px) {
 	.main {
 		width: 50%;
-		margin-top: 0;
 	}
 	.main h1 {
 		font-size: 4rem;
