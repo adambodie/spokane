@@ -39,8 +39,8 @@ class Hello extends React.Component<Props, State> {
 						</div>
 					) : (<div className="greeting">
 							<h2>I'm so excited{getExclamationMarks(this.state.currentEnthusiasm)}</h2>
-							<button onClick={this.onDecrement}>-</button>
-							<button onClick={this.onIncrement}>+</button>
+							<button className="decrement" onClick={this.onDecrement}>-</button>
+							<button className="increment" onClick={this.onIncrement}>+</button>
 						</div>)}
 					</div>
 				</div>
