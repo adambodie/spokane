@@ -39,7 +39,7 @@ const IMAGES = [
 		title: riverfront, 
 		alt: "Riverfront Park", 
 		photoset_id: "72157698061989302", 
-		per_page: "23", 
+		per_page: "26", 
 		menu: shuffleBanners(banners)[0],
 		paragraph: "Riverfront Park, the centerpiece of Spokane along the Spokane River, was home of the 1974 World's Fair, where many of its features still exist today, from the Pavilion to the Clock Tower.  During Labor Day weekend, which I was there for, it is the site of Pig Out in the Park, a free festival of many foods and musical performances since 1979.  I wasn't expecting an event at the park, though it didn't surprise me that one would be held on Labor Day Weekend, but looking at all the people and food carts provided an unexpected surprise.  I wasn't planning on attending but I'm glad I did." 	
 	},
@@ -84,7 +84,7 @@ const IMAGES = [
 		title: cda2, 
 		alt: "Coeur d'Alene", 
 		photoset_id: "72157699685111191", 
-		per_page: "14", 
+		per_page: "15", 
 		menu: shuffleBanners(banners)[5],
 		paragraph: "Coeur d'Alene, with a population of about 45,000 is the largest city in the Idaho Panhandle.  Sitting on the shores of Lake Coeur d'Alene, the city of Coeur d'Alene is a popular tourist spot in the region due to its activities along the lake, as well as the Coeur d'Alene Resort.  It is name for the Native American tribe in the region.  Outside of the Resort, the city itself was charming and hip, with lots of fun shops and restaurants.  I found a funky cafe, Calypsos Coffee and Creamery, and had myself a tasty Cappuccino.  Later, I walked in a gift shop and bought a shot glass with a funny logo for Darth Tater.  It was too cute to pass up Darth Tater, but didn't want a shirt, so I got a shot instead.  Coeur d'Alene was an exciting hip place to visit, with beautiful scenery and fun atmosphere, a perfect place to be."
 	},
@@ -93,7 +93,7 @@ const IMAGES = [
 		title: spokane, 
 		alt: "Spokane",
 		photoset_id: "72157699685111191", 
-		per_page: "12", 
+		per_page: "15", 
 		menu: shuffleBanners(banners)[6],
 		paragraph:"Spokane, with a population of around 220,000 is the largest city in Eastern Washington and second in Washington behind Seattle.  Its nickname is the 'Lilac City,' as it is home of the Syringa Spokane, a pink double lilac variety named for the city.  Spokane is known as the birthplace of Father's Day and famous for hosting the first environmentally themed World's Fair at Expo '74.  Overall, Spokane was a nice place to visit.  The city is big enough to be a metro city, with culture, decent skyscrapers, but also with the less desirable parts that comes with any big city.  The scenery reminded me somewhat of Bend, Oregon, but a bigger population and less of the high desert scenery." 
 	}, 	
@@ -102,7 +102,7 @@ const IMAGES = [
 		title: manito, 
 		alt: "Manito Park", 
 		photoset_id: "72157700993437424", 
-		per_page: "19", 
+		per_page: "20", 
 		menu: shuffleBanners(banners)[7],
 		paragraph: "Manito Park is located south of downtown Spokane, and is home of the Botanical Gardens.  It opened in 1913 and was also home of a Zoo until 1937.  Today, it is home of many gardens, including the Duncan Gardens, Lilac Gardens and the Nishinomiya Tsutakawa Japanese Garden, named after Spokane's sister city in Japan.  I've seen a few gardens, from Portland to Vienna, even Huntsville, Alabama.  Manito Park's Japanese Gardens were peaceful, not nearly as big as Portland's (to no surprise), but nonetheless fitting for a Japanese Garden.  Walking through the best part of Manito Park, the Duncan Gardens, made me think of a much much smaller version of the gardens of Schönbrunn Palace in Vienna.  The bountiful flowers, perfectly lined up, along with the fountain in the middle, was the best place to visit in Manito Park."
 	},
@@ -111,7 +111,7 @@ const IMAGES = [
 		title: huntington, 
 		alt: "Huntington Park", 
 		photoset_id: "72157673361168848", 
-		per_page: "25", 
+		per_page: "26", 
 		menu: shuffleBanners(banners)[8],
 		paragraph: "Just west of Riverfront Park is the new Huntington Park, offering great views of Lower Spokane Falls and surrounding area from riverside to the Skyride, a scenic cable ride down from its beginning of Riverfront Park.  This wasn't on the agenda of my visit, but its proximity and great views made it a place I wound up visiting and loving.  Walking down the path, getting closer to the bottom, provided great spots along the way, both seeing the falls, but also of the Spokane River itself, and the Monroe Street Bridge.  Looking up and watching the Skyride go down and up the scenic path was fun, providing fun photography opportunities.  As for the Skyride itself, it provided great opportunities for pictures not possible on ground.  My only complaint was that I was stuck in the middle of three pods, so some of my views were blocked with other pods."
 	}
