@@ -83,7 +83,7 @@ const IMAGES = [
 		id: 5, 
 		title: cda2, 
 		alt: "Coeur d'Alene", 
-		photoset_id: "72157699685111191", 
+		photoset_id: "72157698061959412", 
 		per_page: "15", 
 		menu: shuffleBanners(banners)[5],
 		paragraph: "Coeur d'Alene, with a population of about 45,000 is the largest city in the Idaho Panhandle.  Sitting on the shores of Lake Coeur d'Alene, the city of Coeur d'Alene is a popular tourist spot in the region due to its activities along the lake, as well as the Coeur d'Alene Resort.  It is name for the Native American tribe in the region.  Outside of the Resort, the city itself was charming and hip, with lots of fun shops and restaurants.  I found a funky cafe, Calypsos Coffee and Creamery, and had myself a tasty Cappuccino.  Later, I walked in a gift shop and bought a shot glass with a funny logo for Darth Tater.  It was too cute to pass up Darth Tater, but didn't want a shirt, so I got a shot instead.  Coeur d'Alene was an exciting hip place to visit, with beautiful scenery and fun atmosphere, a perfect place to be."
