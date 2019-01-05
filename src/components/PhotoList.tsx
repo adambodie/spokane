@@ -7,6 +7,8 @@ export interface Props {
 	menu: string;
 	alt: string;
 	paragraph: string;
+	minimum: number;
+	maximum: number;
 }
 
 class PhotoList extends React.Component<Props>  {
@@ -14,6 +16,8 @@ class PhotoList extends React.Component<Props>  {
 		let results = this.props.data;
 		let menu = this.props.menu;
 		let paragraph = this.props.paragraph;
+		let minimum = this.props.minimum;
+		let maximum = this.props.maximum;
 		let alt = this.props.alt;
 		const settings = {
 			dots: false,
@@ -26,9 +30,9 @@ class PhotoList extends React.Component<Props>  {
 	let photos = results.map((x: any, index: number) =>
 		<div key={x.id}>
 			<img src={menu} alt="Header" className="header"/>
-			<Photo farm={x.farm} server={x.server} id={x.id} secret={x.secret} title={x.title} index={index + 1} />
+			<Photo id={x.id} title={x.title} index={index + 1} />
 		</div>
-	)
+	).filter((x, index) => index >= minimum && index <= maximum)
   
 	  return(
 		<div>

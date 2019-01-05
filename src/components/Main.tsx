@@ -8,14 +8,11 @@ import IMAGES from '../images';
 
 export interface Props {
   title: string;
-  subtitle: string;
+  subtitle: string;  
 }
 
 
 class Main extends React.Component<Props> {
-	constructor(props: Props) {
-		super(props);
-	}
 
 	render() {
     return (
@@ -40,9 +37,9 @@ class Main extends React.Component<Props> {
 			{IMAGES.map(i => (
 				<Route path={`/main/${i.id + 1}`} key={i.id + 1} 
 					render={() => 
-						<Carousel 
-							photoset_id={i.photoset_id} 
-							per_page={i.per_page}
+						<Carousel  
+							minimum={i.minimum}
+							maximum={i.maximum}
 							menu={i.menu}
 							alt={i.alt}
 							paragraph={i.paragraph} 
