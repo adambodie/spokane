@@ -37,6 +37,8 @@ class Main extends React.Component<Props> {
 						<Carousel  
 							minimum={i.minimum}
 							maximum={i.maximum}
+							previous={i.previous}
+							next={i.next}
 							menu={i.menu}
 							alt={i.alt}
 							paragraph={i.paragraph} 

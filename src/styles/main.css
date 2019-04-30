@@ -6,7 +6,7 @@
 	font-size: 2rem;
 	color: #ff7e00;
 	text-align: center;
-	font-family: 'Gamja Flower', cursive;
+	font-family: 'Wendy One', sans-serif;
 	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 	margin-bottom: 0;
 }
@@ -14,8 +14,8 @@
 	text-align: right;
 	margin: 0;
 	color: #ff7e00;
-	font-family: 'Gamja Flower', cursive;
-	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);	
+	font-family: 'Wendy One', sans-serif;
+	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 	margin-bottom: 10px;
 }
  
@@ -38,7 +38,7 @@
 
 .square h5 {
 	text-align: center;
-	font-family: 'Gamja Flower', cursive;
+	font-family: 'Wendy One', sans-serif;
 	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
  }
 

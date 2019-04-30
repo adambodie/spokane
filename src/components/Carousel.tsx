@@ -9,6 +9,8 @@ export interface Props {
 	paragraph: string;
 	minimum: number;
 	maximum: number;
+	previous: string;
+	next: string;
 }
 
 interface State {
@@ -36,10 +38,19 @@ class Carousel extends React.Component<Props, State>  {
 		}
 	render() {
 		const { photographs } = this.state;
-		const { menu, alt, paragraph, minimum, maximum } = this.props;
+		const { menu, alt, paragraph, minimum, maximum, previous, next } = this.props;
 		return (
 			<div className='carousel-background'>
-				<PhotoList data={photographs} menu={menu} alt={alt} paragraph={paragraph} minimum={minimum} maximum={maximum} />
+				<PhotoList 
+					data={photographs} 
+					menu={menu} 
+					alt={alt} 
+					paragraph={paragraph} 
+					minimum={minimum} 
+					maximum={maximum} 
+					previous={previous}
+					next={next}
+					/>
 			</div>
 		);
 	}

@@ -30,7 +30,8 @@ class Hello extends React.Component<Props, State> {
 
     return (
 		<div className="hello">
-			<h1>Welcome to Spokane, how excited are you for the show?</h1>
+			<h1>Welcome to Spokane!!!</h1>
+			<h2>How excited are you to see my Pictures?</h2>
 				<div className="enthusiasm">
 					<div>{ this.state.currentEnthusiasm > 5 ? ( 
 						<Ready />
