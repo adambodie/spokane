@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-const Photo = (props: any) => (
+const Photo = ({id, title}: any) => (
 	<div>
-		<img src={`https://s3-us-west-2.amazonaws.com/spokane.bodiewebdesign.com/static/images/${props.id}_o.jpg`} alt={props.title}/>
-		<h4>{props.title}</h4>
+		<img src={`https://spokane.bodiewebdesign.com/static/images/${id}_o.jpg`} alt={title}/>
+		<h4>{title}</h4>
 	</div>
 );
 

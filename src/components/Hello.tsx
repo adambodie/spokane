@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import Ready from './Ready';
 
 
 export interface Props {
@@ -33,10 +33,7 @@ class Hello extends React.Component<Props, State> {
 			<h1>Welcome to Spokane, how excited are you for the show?</h1>
 				<div className="enthusiasm">
 					<div>{ this.state.currentEnthusiasm > 5 ? ( 
-						<div>
-							<h4>Now You're Ready!</h4>
-							<button><Link to="/main">Begin</Link></button>
-						</div>
+						<Ready />
 					) : (<div className="greeting">
 							<h2>I'm so excited{getExclamationMarks(this.state.currentEnthusiasm)}</h2>
 							<button className="decrement" onClick={this.onDecrement}>-</button>

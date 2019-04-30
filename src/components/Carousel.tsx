@@ -24,20 +24,22 @@ class Carousel extends React.Component<Props, State>  {
 		};
     }
 	componentDidMount() {
-		axios.get(`https://s3-us-west-2.amazonaws.com/spokane.bodiewebdesign.com/data.json`)
+		axios.get(`https://spokane.bodiewebdesign.com/data.json`)
 			.then((response: any) => {
 				this.setState({
 					photographs: response.data
 				});
 			})
 			.catch(error => {
-				console.log('Error fetching and parsing Photographs data', error);
+				console.log('Error fetching and parsing data');
 			});
 		}
 	render() {
+		const { photographs } = this.state;
+		const { menu, alt, paragraph, minimum, maximum } = this.props;
 		return (
 			<div className='carousel-background'>
-				<PhotoList data={this.state.photographs} menu={this.props.menu} alt={this.props.alt} paragraph={this.props.paragraph} minimum={this.props.minimum} maximum={this.props.maximum} />
+				<PhotoList data={photographs} menu={menu} alt={alt} paragraph={paragraph} minimum={minimum} maximum={maximum} />
 			</div>
 		);
 	}
