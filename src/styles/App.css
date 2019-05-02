@@ -27,22 +27,40 @@ button {
   margin-bottom: 20px;
   background-color: #ff7e00;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  border: none;
   
 }
 
 .increment, .decrement {
 	border-radius: 100%;
+	text-shadow: none;
+	color: #8946ca;
 }
 
 .increment:focus, .decrement:focus {
 	outline: none;
 }
+
+.increment:hover, .decrement:hover {
+	background-color: #ee6d00;
+}
+
+
  a {
 	text-decoration: none;
  }
 
+
+.begin {
+	border: none;
+}
+
+.begin:hover {
+	background-color: #ee6d00;
+}
 .begin a {
-	color: black;
+	color: #8946ca;
+	text-shadow: none;
 }
  
 

@@ -21,22 +21,22 @@ class Hello extends React.Component<Props, State> {
 	onDecrement = () => this.updateEnthusiasm(this.state.currentEnthusiasm - 1);
 
 	render() {
-
-		if (this.state.currentEnthusiasm <= 0) {
+	const { currentEnthusiasm } = this.state;
+		if (currentEnthusiasm <= 0) {
 			alert('You can be more enthusiastic than that!');
 			this.updateEnthusiasm(1);
 			
 		}
-
+	
     return (
 		<div className="hello">
 			<h1>Welcome to Spokane!!!</h1>
 			<h2>How excited are you to see my Pictures?</h2>
 				<div className="enthusiasm">
-					<div>{ this.state.currentEnthusiasm > 5 ? ( 
+					<div>{ currentEnthusiasm > 5 ? ( 
 						<Ready />
 					) : (<div className="greeting">
-							<h2>I'm so excited{getExclamationMarks(this.state.currentEnthusiasm)}</h2>
+							<h2>I'm so excited{getExclamationMarks(currentEnthusiasm)}</h2>
 							<button className="decrement" onClick={this.onDecrement}>-</button>
 							<button className="increment" onClick={this.onIncrement}>+</button>
 						</div>)}

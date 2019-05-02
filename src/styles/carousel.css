@@ -41,7 +41,7 @@
 
 .slick-prev, .slick-next {
 	z-index: 10001;
-	top: 90%;
+	top: 95%;
 }
 
 
@@ -68,6 +68,10 @@
 	background: #ff7e00;
 	height: 50px;
 	font-family: 'Wendy One', sans-serif;
+}
+
+.arrows:hover{
+	background-color: #ee6d00;
 }
 
 @media (min-width: 768px) {

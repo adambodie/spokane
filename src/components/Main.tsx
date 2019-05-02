@@ -6,7 +6,7 @@ import IMAGES from '../images';
 
 export interface Props {
   title: string;
-  subtitle: string;  
+  subtitle: string;
 }
 
 class Main extends React.Component<Props> {
