@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Ready from './Ready';
+import { MainProvider } from '../context';
 
 
 export interface Props {
@@ -29,6 +30,7 @@ class Hello extends React.Component<Props, State> {
 		}
 	
     return (
+		<MainProvider>
 		<div className="hello">
 			<h1>Welcome to Spokane!!!</h1>
 			<h2>How excited are you to see my Pictures?</h2>
@@ -43,6 +45,7 @@ class Hello extends React.Component<Props, State> {
 					</div>
 				</div>
 		</div>
+		</MainProvider>
     );
   }
 
