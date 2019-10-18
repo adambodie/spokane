@@ -1,29 +1,24 @@
 import * as React from 'react';
 
-interface Props {
-    children: React.ReactNode | React.ReactNode[];
-};
-
-interface State {
-	enthusiasmLevel: number;
-};
-
-
-const MainContext = React.createContext<Partial<Props>>({});
+export const MainContext = React.createContext({
+	state: { enthusiasmLevel: 0},
+	increment: (value: any) => {}
+});
 
 const { Consumer: MainConsumer } = MainContext;
 
-class MainProvider extends React.Component<Props, State> {
-	constructor(props: Props) {
-		super(props);
-	  }
+class MainProvider extends React.Component {
+	state = { enthusiasmLevel: 1 };
 	render() {
 		const { children } = this.props;
-		const value = {
-
-		};
 		return(
-			<MainContext.Provider value={value}>
+			<MainContext.Provider value={{
+				state: this.state,
+				increment: (value) =>
+            		this.setState({
+              			enthusiasmLevel: this.state.enthusiasmLevel + value,
+            		}),
+			  	}}>
 				{children}
 			</MainContext.Provider>
 		)

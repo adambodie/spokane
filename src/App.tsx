@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
     <Router>
       <div className="App">
-        <Route exact path = "/" render={() => <Hello enthusiasmLevel={1} />}/>
+        <Route exact path = "/" render={() => <Hello />}/>
         <Route path="/main" render={() => <Main title={"Pigging Out in Spokane"} subtitle={"A Trip Years in the Making"} />} />
       </div>
      </Router>
