@@ -18,16 +18,13 @@ class Main extends React.Component<Props> {
 			<h6 className="subtitle">{subtitle}</h6>
 			<div className="squares">
 			{IMAGES.map(i => (
-			<div className="square" key={i.id} >
-				<Link to={{  pathname: `/main/${i.id + 1}`, state: { modal: true }}}>
-					<div className="side-a">
-						<img src={i.title} alt={i.alt} />
-					</div>
-					<div className="side-b">
-						<h5>{i.id + 1}. {i.alt}</h5>
-					</div>
-				</Link>	
-			</div>
+				<div className="view view-first" key={i.id}>
+					<img src={i.title} alt={i.alt} />
+     				<div className="mask">
+     					<h2>{i.id + 1}. {i.alt}</h2>
+						 <Link to={{  pathname: `/main/${i.id + 1}`, state: { modal: true }}} className="info">Read More</Link>
+     				</div>
+				</div>
 			))
 		}
 			</div>
