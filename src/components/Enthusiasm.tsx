@@ -7,15 +7,19 @@ const Enthusiasm = () => {
         <MainConsumer>
             { (context) => {
                 let { enthusiasmLevel } = context.state;
+                const fontStyle = {
+                    fontSize: 32 + enthusiasmLevel * 4
+                };
+                console.log(fontStyle);
                 if (enthusiasmLevel === 0) {
                     alert ("You can be more enthusiastic than that!");
                     enthusiasmLevel = 1;
                 }
                 return(
-                    <div className="enthusiasm">
+                    <div className="enthusiasm animated fadeInLeft delay-2s">
                         <div>{ enthusiasmLevel > 5 ? ( <Ready />) : (
                             <div className="greeting">
-                                <h2>I'm so excited{getExclamationMarks(enthusiasmLevel)}</h2>
+                                <h2 style={fontStyle}>I'm so excited{getExclamationMarks(enthusiasmLevel)}</h2>
                                 <button className="decrement" onClick={()=> context.increment(-1)}>-</button>
                                 <button className="increment" onClick={()=> context.increment(1)}>+</button>
                             </div>

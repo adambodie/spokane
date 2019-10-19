@@ -12,11 +12,10 @@
 }
 .main h6 {
 	text-align: right;
-	margin: 0;
+	margin: 0 10px 10px 0;
 	color: #ff7e00;
 	font-family: 'Wendy One', sans-serif;
 	text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-	margin-bottom: 10px;
 }
  
 .main p {
@@ -31,6 +30,17 @@
 	margin-bottom: 50px;
 }
 
+.mainParagraph {
+	display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mainParagraph img {
+    max-height: 300px;
+    float: right;
+    padding: 20px;
+}
 @media (min-width: 512px) {
 	.main {
 		margin-top: 0;
@@ -93,6 +103,7 @@
     text-transform: uppercase;
 	box-shadow: 0 0 1px #000;
 	font-size: 18px;
+	margin-top: 50px;
 }
 .view a.info:hover {
     box-shadow: 0 0 5px #000;

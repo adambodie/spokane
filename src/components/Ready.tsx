@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Ready = () => (
 		<div>
-			<h4>Now You're Ready!</h4>
+			<h2 style={{fontSize: 60}}>Now You're Ready!</h2>
 			<button className="begin"><Link to="/main">Begin</Link></button>
 		</div>
 	);
