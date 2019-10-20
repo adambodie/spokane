@@ -12,13 +12,6 @@
 	color: #ff7e00;
 }
 
-.info {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	padding: 5px;
-	text-align: center;
-}
 
   
 .header {
@@ -90,9 +83,6 @@
 		right: 0!important;
 	}
 	
-	.info {
-		width: 60%;
-	}
 	.slick-prev, .slick-next {
 		top: 50%;
 	}
