@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Slider from 'react-slick';
 import Photo from './Photo';
-import { Link } from 'react-router-dom';
+import CarouselLinks from './CarouselLinks';
 
 export interface Props {
 	data: never[];
@@ -36,13 +36,7 @@ class PhotoList extends React.Component<Props>  {
 					).filter((x, index) => index >= minimum && index <= maximum)
 				}
 			</Slider>
-				<div className="info">
-					<p>{paragraph}</p>
-					<div className="arrowContainer">
-						<Link to={{  pathname: `/main/${previous}`, state: { modal: true }}} className="arrows">Prev</Link>
-						<Link to={{  pathname: `/main/${next}`, state: { modal: true }}} className="arrows">Next</Link>
-					</div>
-				</div>
+			<CarouselLinks previous={previous} next={next} paragraph={paragraph} />
 		</div>
 		);
 	}

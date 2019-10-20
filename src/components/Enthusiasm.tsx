@@ -2,6 +2,8 @@ import * as React from 'react';
 import Ready from './Ready';
 import { MainConsumer } from '../context';
 
+const getExclamationMarks = (numChars: any) => Array(numChars + 1).join('!');
+
 const Enthusiasm = () => {
     return(
         <MainConsumer>
@@ -10,7 +12,6 @@ const Enthusiasm = () => {
                 const fontStyle = {
                     fontSize: 32 + enthusiasmLevel * 4
                 };
-                console.log(fontStyle);
                 if (enthusiasmLevel === 0) {
                     alert ("You can be more enthusiastic than that!");
                     enthusiasmLevel = 1;
@@ -33,5 +34,3 @@ const Enthusiasm = () => {
 	)
 }
 export default Enthusiasm;
-
-const getExclamationMarks = (numChars: any) => Array(numChars + 1).join('!');
