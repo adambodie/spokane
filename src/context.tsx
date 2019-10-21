@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import postFalls from './images/post-falls.jpg';
 import cda from './images/cda.jpg';
 import cda2 from './images/cda2.jpg';
@@ -140,26 +139,27 @@ const IMAGES = [
 
 export const MainContext = React.createContext({
 	state: { 
-		enthusiasmLevel: 0,
+		enthusiasmLevel: 1,
 		images: IMAGES
-	
 	},
 	increment: (value: any) => {}
+
 });
 
 const { Consumer: MainConsumer } = MainContext;
 
 class MainProvider extends React.Component {
-	state = { enthusiasmLevel: 1, images: IMAGES };
+	state = { enthusiasmLevel: 1, images: IMAGES};
 	render() {
 		const { children } = this.props;
+		const { enthusiasmLevel } = this.state;
 		return(
 			<MainContext.Provider value={{
 				state: this.state,
 				increment: (value) =>
             		this.setState({
-              			enthusiasmLevel: this.state.enthusiasmLevel + value,
-            		}),
+              			enthusiasmLevel: enthusiasmLevel + value,
+					}),
 			  	}}>
 				{children}
 			</MainContext.Provider>

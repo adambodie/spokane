@@ -4,7 +4,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 1400px;
+	height: 2550px;
 	z-index: 10000;
 	background: url('../images/background.jpg');
 	background-size: cover;
@@ -69,6 +69,9 @@
 }
 
 @media (min-width: 768px) {
+	.carousel-background {
+		height: 1400px;
+	}
 	.header {
 		width: 640px;
 	}

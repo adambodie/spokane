@@ -2,7 +2,7 @@ import * as React from 'react';
 import map from '../images/map.jpg';
 
 const Intro = () => (
-	<div className="mainParagraph carousel-background">
+	<div className="mainIntro carousel-background">
 		<h1>Intro</h1>
 		<p>Years ago, in 2006, when Adam headed off the Minneapolis to go to school at the University of Minnesota, him and his Dad embarked on a cross country trip to Minneapolis.  During that trip, they drove through Spokane, stopping for lunch, on the way to spend the night in Montana.  But just before entering Spokane, a view of the city opened up, which Adam attempted to take a picture of, but just missed.</p>
 		<img src="https://spokane.bodiewebdesign.com/static/images/43738949725_o.jpg" alt="Adam" />

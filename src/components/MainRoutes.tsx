@@ -18,7 +18,9 @@ const MainRoutes = () => (
 										menu={i.menu} 
 										alt={i.alt} 
 										paragraph={i.paragraph} 
-										id={i.id}/>
+										id={i.id}
+										key={i.id}
+										/>
 								)
 					        )
 				        }

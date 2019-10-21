@@ -10,7 +10,7 @@ const MainSquares = () => (
 			    return (
                     <div className="squares">
                     <MainSquareIntro />
-                    {images.map(i => <MainSquare id={i.id} title={i.title} alt={i.alt} />)}
+                    {images.map(i => <MainSquare id={i.id} title={i.title} alt={i.alt} key={i.id} />)}
                 </div>
 			)
 		}}

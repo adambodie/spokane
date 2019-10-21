@@ -1,0 +1,26 @@
+.mainIntro {
+	display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mainIntro img:first-of-type {
+    max-height: 200px;
+    float: none;
+    padding: 20px;
+}
+
+.mainIntro img:last-of-type {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid white;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .mainIntro img:first-of-type {
+        max-height: 300px;
+        float: right;
+        padding: 20px;
+    }
+}
