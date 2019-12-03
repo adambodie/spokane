@@ -1,7 +1,6 @@
-import * as React from 'react';
-import { withRouter } from 'react-router';
-import { RouteComponentProps } from 'react-router';
-
+import * as React from 'react'
+import { withRouter } from 'react-router'
+import { RouteComponentProps } from 'react-router'
 
 class ScrollToTop extends React.Component<RouteComponentProps<any>> {
   componentDidUpdate(prevProps: any) {
@@ -12,11 +11,9 @@ class ScrollToTop extends React.Component<RouteComponentProps<any>> {
   
   render() {
     return (
-		<div>
-			{this.props.children}
-		</div>
+			this.props.children
 		)
   }
 }
 
-export default withRouter(ScrollToTop);
+export default withRouter(ScrollToTop)

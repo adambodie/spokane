@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Route } from 'react-router-dom';
-import Carousel from './Carousel';
+import * as React from 'react'
+import { Route } from 'react-router-dom'
+import Carousel from './Carousel'
 
 const MainRoute = ({minimum, maximum, previous, next, menu, alt, paragraph, id}: any) => (
     <Route  path={`/main/${id + 1}`} key={id + 1} 
@@ -15,6 +15,6 @@ const MainRoute = ({minimum, maximum, previous, next, menu, alt, paragraph, id}:
                 paragraph={paragraph} 
             />} 
     />
-);
+)
 
-export default MainRoute;
+export default MainRoute

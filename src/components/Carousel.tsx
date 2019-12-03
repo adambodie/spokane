@@ -1,7 +1,6 @@
-import * as React from 'react';
-import * as axios from 'axios';
-import PhotoList from './PhotoList';
-
+import * as React from 'react'
+import * as axios from 'axios'
+import PhotoList from './PhotoList'
 
 export interface Props {
 	menu: string;
@@ -14,9 +13,8 @@ export interface Props {
 }
 
 interface State {
-	photographs: any;
+	photographs: any
 }
-
 
 class Carousel extends React.Component<Props, State>  {
 	constructor(props: Props) {
@@ -28,17 +26,15 @@ class Carousel extends React.Component<Props, State>  {
 	componentDidMount() {
 		axios.get(`https://spokane.bodiewebdesign.com/data.json`)
 			.then((response: any) => {
-				this.setState({
-					photographs: response.data
-				});
+				this.setState({ photographs: response.data })
 			})
 			.catch(error => {
 				console.log('Error fetching and parsing data');
 			});
 		}
 	render() {
-		const { photographs } = this.state;
-		const { menu, alt, paragraph, minimum, maximum, previous, next } = this.props;
+		const { photographs } = this.state
+		const { menu, alt, paragraph, minimum, maximum, previous, next } = this.props
 		return (
 			<div className='carousel-background'>
 				<PhotoList 
@@ -56,4 +52,4 @@ class Carousel extends React.Component<Props, State>  {
 	}
 }
 
-export default Carousel;
+export default Carousel

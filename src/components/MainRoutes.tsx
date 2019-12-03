@@ -1,13 +1,13 @@
-import * as React from "react";
-import { Route } from 'react-router-dom';
-import Intro from './Intro';
-import MainRoute from './MainRoute';
-import { MainConsumer } from '../context';
+import * as React from 'react'
+import { Route } from 'react-router-dom'
+import Intro from './Intro'
+import MainRoute from './MainRoute'
+import { MainConsumer } from '../context'
 
 const MainRoutes = () => (
 	<MainConsumer>
 		{ (context) => { 
-			const { images } = context.state;
+			const { images } = context.state
 			    return (
                     <React.Fragment>
 			            {images.map(i => ( 
@@ -24,15 +24,14 @@ const MainRoutes = () => (
 								)
 					        )
 				        }
-				        <Route exact path="/main/intro" key="10" render={() => <Intro />} />
+				        <Route exact path='/main/intro' key='10' render={() => <Intro />} />
                     </React.Fragment>
 			)
 
 		}}
-	
 		</MainConsumer>	
 );
 
-export default MainRoutes;
+export default MainRoutes
 
 

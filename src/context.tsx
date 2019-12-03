@@ -1,25 +1,16 @@
-import * as React from 'react';
-import postFalls from './images/post-falls.jpg';
-import cda from './images/cda.jpg';
-import cda2 from './images/cda2.jpg';
-import riverfront from './images/riverfront.jpg';
-import upper from './images/upper.jpg';
-import lower from './images/lower.jpg';
-import manito from './images/manito.jpg';
-import huntington from './images/huntington.jpg';
-import spokane from './images/spokane.jpg';
-import cheesecake from './images/cheesecake.jpg';
-import doner from './images/doner.jpg';
-import elk from './images/elk.jpg';
-import bacon from './images/bacon.jpg';
-import berry from './images/berry.jpg';
-import fry from './images/fry.jpg';
-import ibajella from './images/ibajella.jpg';
-import nitrogen from './images/nitrogen.jpg';
-import oreo from './images/oreo.jpg';
+import * as React from 'react'
 
-
-const banners = [cheesecake, doner, elk, bacon, berry, fry, ibajella, nitrogen, oreo];
+const banners = [
+	`/assets/banners/cheesecake.jpg`, 
+	`/assets/banners/doner.jpg`, 
+	`/assets/banners/elk.jpg`, 
+	`/assets/banners/bacon.jpg`, 
+	`/assets/banners/berry.jpg`, 
+	`/assets/banners/fry.jpg`, 
+	`/assets/banners/ibajella.jpg`, 
+	`/assets/banners/nitrogen.jpg`, 
+	`/assets/banners/oreo.jpg`
+];
 
 function shuffleBanners(items: any[]) {
 	const array = items;
@@ -37,7 +28,7 @@ function shuffleBanners(items: any[]) {
 const IMAGES = [
 	{ 
 		id: 0, 
-		title: riverfront, 
+		title: `/assets/squares/riverfront.jpg`, 
 		alt: "Riverfront Park", 
 		minimum: 0,
 		maximum: 25,
@@ -48,7 +39,7 @@ const IMAGES = [
 	},
 	{ 
 		id: 1, 
-		title: upper, 
+		title: `/assets/squares/upper.jpg`, 
 		alt: "Upper Spokane Falls", 
 		minimum: 26,
 		maximum: 37,
@@ -59,7 +50,7 @@ const IMAGES = [
 	},
 	{ 
 		id: 2, 
-		title: lower, 
+		title: `/assets/squares/lower.jpg`, 
 		alt: "Lower Spokane Falls", 
 		minimum: 38,
 		maximum: 53,
@@ -70,7 +61,7 @@ const IMAGES = [
 	},
 	{ 
 		id: 3, 
-		title: postFalls, 
+		title: `/assets/squares/post-falls.jpg`, 
 		alt: "Post Falls", 
 		minimum: 54,
 		maximum: 60,
@@ -81,7 +72,7 @@ const IMAGES = [
 	}, 
 	{ 
 		id: 4, 
-		title: cda, 
+		title: `/assets/squares/cda.jpg`, 
 		alt: "Coeur d'Alene Resort", 
 		minimum: 61,
 		maximum: 98,
@@ -92,7 +83,7 @@ const IMAGES = [
 	},
 	{ 
 		id: 5, 
-		title: cda2, 
+		title: `/assets/squares/cda2.jpg`, 
 		alt: "Coeur d'Alene", 
 		minimum: 99,
 		maximum: 113,
@@ -103,7 +94,7 @@ const IMAGES = [
 	},
 	{ 
 		id: 6, 
-		title: spokane, 
+		title: `/assets/squares/spokane.jpg`, 
 		alt: "Spokane",
 		minimum: 114,
 		maximum: 128,
@@ -114,7 +105,7 @@ const IMAGES = [
 	}, 	
 	{ 
 		id: 7, 
-		title: manito, 
+		title: `/assets/squares/manito.jpg`, 
 		alt: "Manito Park", 
 		minimum: 129,
 		maximum: 148,
@@ -125,7 +116,7 @@ const IMAGES = [
 	},
 	{ 
 		id: 8, 
-		title: huntington, 
+		title: `/assets/squares/huntington.jpg`, 
 		alt: "Huntington Park", 
 		minimum: 149,
 		maximum: 175,
@@ -135,7 +126,6 @@ const IMAGES = [
 		paragraph: "Just west of Riverfront Park is the new Huntington Park, offering great views of Lower Spokane Falls and surrounding area from riverside to the Skyride, a scenic cable ride down from its beginning of Riverfront Park.  This wasn't on the agenda of my visit, but its proximity and great views made it a place I wound up visiting and loving.  Walking down the path, getting closer to the bottom, provided great spots along the way, both seeing the falls, but also of the Spokane River itself, and the Monroe Street Bridge.  Looking up and watching the Skyride go down and up the scenic path was fun, providing fun photography opportunities.  As for the Skyride itself, it provided great opportunities for pictures not possible on ground.  My only complaint was that I was stuck in the middle of three pods, so some of my views were blocked with other pods."
 	}
 ];
-
 
 export const MainContext = React.createContext({
 	state: { 
@@ -167,6 +157,5 @@ class MainProvider extends React.Component {
 	}	
 }
 
-export const Consumer = MainContext.Consumer;
-
-export { MainConsumer, MainProvider };
+export const Consumer = MainContext.Consumer
+export { MainConsumer, MainProvider }

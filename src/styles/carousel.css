@@ -6,7 +6,7 @@
 	right: 0;
 	height: 2550px;
 	z-index: 10000;
-	background: url('../images/background.jpg');
+	background: url('/assets/background.jpg');
 	background-size: cover;
 	background-position: bottom;
 	color: #ff7e00;

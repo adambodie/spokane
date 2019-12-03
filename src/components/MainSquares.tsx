@@ -1,12 +1,12 @@
-import * as React from "react";
-import { MainConsumer } from '../context';
-import MainSquareIntro from './MainSquareIntro';
-import MainSquare from './MainSquare';
+import * as React from 'react'
+import { MainConsumer } from '../context'
+import MainSquareIntro from './MainSquareIntro'
+import MainSquare from './MainSquare'
 
 const MainSquares = () => (
 	<MainConsumer>
 		{ (context) => { 
-			const { images } = context.state;
+			const { images } = context.state
 			    return (
                     <div className="squares">
                     <MainSquareIntro />
@@ -15,8 +15,8 @@ const MainSquares = () => (
 			)
 		}}
 	</MainConsumer>
-);
+)
 
-export default MainSquares;
+export default MainSquares
 
 
